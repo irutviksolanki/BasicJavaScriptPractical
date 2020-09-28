@@ -1,0 +1,32 @@
+<HTML>
+<HEAD>	
+
+<TITLE>Fibonacci series by Kashid</TITLE>
+<script>
+function display()
+ {
+  var n=parseInt(frm.t1.value)
+  var a=0,b=1,c=0,s=" ";
+
+  while((a+b)<=n)
+      {
+         c=a+b;
+        
+         s=s+c+ " , ";
+         b=a;
+         a=c;
+       
+       }
+
+alert("Fibonacci Series: "+s)
+ }
+</script>
+</HEAD>
+<BODY>
+<form name=frm>
+  <input type=text name=t1>
+  <input type=button name=b1 onclick="display();" value="fibonacci series">
+  </form>
+
+</BODY>
+</HTML>

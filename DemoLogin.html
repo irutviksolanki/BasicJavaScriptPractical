@@ -1,0 +1,33 @@
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+<title>JavaScript form validation - Password Checking - 3</title>  
+</head>  
+<body>  
+  
+<h2>Input Password and Submit [7 to 16 characters which contain numeric digit,character and a special character]</h2>  
+<form name="form1" action="#">  
+enter Usernamr:<input type='text' name='text2'/><br/><br/>
+enter password:<input type='password' name='text1'/><br/><br/>
+<input type="submit" name="submit" value="Submit" onclick="CheckPassword(document.form1.text1)"/>
+</form>  
+<script type="text/javascript">
+function CheckPassword(inputtxt)   
+{   
+ var minNumberofChars = 7;
+    var maxNumberofChars = 16;
+    var regularExpression  = /^[a-zA-Z0-9!@#$%^&*.-_]{7,16}$/;
+if(inputtxt.value.match(regularExpression))   
+{   
+alert('password is correct')  ;
+return true;  
+}  
+else  
+{   
+alert('must enter number,char,spacial character.')  
+return false;  
+}  
+}    
+</script>  
+</body>  
+</html>  

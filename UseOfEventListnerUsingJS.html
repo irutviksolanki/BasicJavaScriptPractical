@@ -1,0 +1,26 @@
+ <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Untitled Document</title>
+<script language="JavaScript">
+  window.onbeforeunload = confirmExit;
+  function confirmExit()
+  {
+    return "You have attempted to leave this page.  If you have made any changes to the fields without clicking the Save button, your changes will be lost.  Are you sure you want to exit this page?";
+  }
+  function over()
+  {
+  document.getElementById("head1").style.backgroundColor="yellow";
+  }
+  function out()
+  {
+    document.getElementById("hid").style.color="white";
+  document.getElementById("head1").style.backgroundColor="black";
+  }
+</script>
+</head>
+<body>
+<div id="head1"><h1 id="hid" onmouseover="over()" onmouseout="out()" >This is heading1 style.</h1></div>
+</body>
+</html>

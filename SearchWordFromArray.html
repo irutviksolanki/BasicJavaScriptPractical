@@ -1,0 +1,29 @@
+<html>
+<head>
+<title>Untitled Document</title>
+</head>
+<body>
+<script type="text/javascript">
+var str = prompt("enter string");
+var srchword=prompt("enter word to search in string");
+var copyword=0;
+var temp = new Array();
+temp = str.split(" ");
+alert(temp.length);
+for (var i = 0;i < temp.length; ++i)
+{
+ if(srchword.match(temp[i]))
+ {
+	copyword=srchword.match(temp[i]);
+	var pos = temp.indexOf(srchword);
+	document.write(srchword+" found in your array at "+ pos +" position" );
+	copyword=-1;
+ }
+}
+if(copyword==0)
+{
+	document.write(srchword+" not found in your array");
+}
+</script>
+</body onload=containsAny()>
+</html>
